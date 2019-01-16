@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mass-barcode-generator",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mike Rovers <mikerovers97@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "gatsby": "^2.0.76",
@@ -15,15 +15,18 @@
     "gatsby-plugin-sharp": "^2.0.14",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-barcode": "^1.3.4",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "react-to-print": "^2.0.0-alpha-6",
     "reactstrap": "^7.0.2"
   },
   "keywords": [
-    "gatsby"
+    "barcode"
   ],
   "license": "MIT",
   "scripts": {
@@ -31,6 +34,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
@@ -38,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mikerovers/mass-barcode"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mikerovers/mass-barcode/issues"
   }
 }
